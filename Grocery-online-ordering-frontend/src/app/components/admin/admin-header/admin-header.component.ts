@@ -1,0 +1,41 @@
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ServiceService } from '../../service/service.service';
+import { Router, NavigationStart } from '@angular/router';
+import { filter } from 'rxjs';
+
+@Component({
+  selector: 'app-admin-header',
+  templateUrl: './admin-header.component.html',
+  styleUrls: ['./admin-header.component.scss']
+})
+export class AdminHeaderComponent implements OnInit{
+  url: string = '';
+  userName: string = '';
+  constructor(
+    private gService :ServiceService,
+    private router:Router,
+    private changeDetector: ChangeDetectorRef
+  ) {
+    if (this.gService.getAdminName() !== null) {
+      this.userName = this.gService.getAdminName();
+    }
+  }
+
+  ngOnInit(): void {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationStart)
+    ).subscribe((event: any) => {
+      this.url = event?.url;
+    });
+  }
+
+  
+  routerToLink(link: string): void {
+    if (link === '/admin/logout') {
+      this.gService.clientLogout();
+      return;
+    }
+    this.router.navigate([link]);
+  }
+
+}

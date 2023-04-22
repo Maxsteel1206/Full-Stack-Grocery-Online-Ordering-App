@@ -1,0 +1,48 @@
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+        <!-- <div><img  src="../../../assets/images/fresh-logo.png" ></div> -->
+        <div><img  src="../../../assets/images/logodk.jpg" height="100"width="100" ></div>
+        <div class="navbar-brand" href="#!">DK Grocery Ordering App</div>
+        <button class="navbar-toggler" type="submit" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <!-- <li class="nav-item"><div class="nav-link active" aria-current="page" href="#!"(click)="gotourl('')" [class.selected]="url === '/'">Home</div></li>
+                <li class="nav-item"><div class="nav-link" href="#!"(click)="gotourl('about')" [class.selected]="url === '/about'">About</div></li>    -->
+                <button class="btn btn-outline-dark" type="submit"><div (click)="gotourl('')" [class.selected]="url === '/'">Home</div></button> &nbsp;
+                &nbsp;
+                <button class="btn btn-outline-dark" type="submit"><div (click)="gotourl('about')" [class.selected]="url === '/about'">About</div> </button> &nbsp;
+                &nbsp;
+                <button class="btn btn-outline-dark" type="submit"><div (click)="gotourl('contact')" [class.selected]="url === '/contact-'">Contact</div></button>
+            </ul>
+           
+            <form class="d-flex">
+                <button class="btn btn-outline-dark" type="submit">
+                    <div (click)="gotourl('admin-login')" [class.selected]="url === '/admin-login'">AdminLogin</div>
+                </button>
+            </form>
+            &nbsp;
+            &nbsp;
+
+            <form class="d-flex">
+                <button class="btn btn-outline-dark" type="submit">
+                    <div (click)="gotourl('customer-loginpage')" [class.selected]="url === '/customer-loginpage'">CustomerLogin</div>
+                </button>
+            </form>
+            
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- <div class="main">
+    <div><img  src="../../../assets/images/fresh-logo" width="10%" height="90%"></div>
+    <div (click)="gotourl('')" [class.selected]="url === '/'">Home</div>
+    <div (click)="gotourl('about')" [class.selected]="url === '/about'">About</div>
+   
+    <div (click)="gotourl('customer-loginpage')" [class.selected]="url === '/customer-loginpage'">CustomerLogin</div>
+    <div (click)="gotourl('admin-login')" [class.selected]="url === '/admin-login'">AdminLogin</div>
+    <div (click)="gotourl('contact')" [class.selected]="url === '/contact-'">Contact</div>
+</div> -->
+ <!-- <div (click)="gotourl('client-register')"  [class.selected]="url === '/client-register'">Register</div> -->

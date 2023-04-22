@@ -1,0 +1,132 @@
+<ngb-carousel *ngIf="images">
+  <ng-template ngbSlide>
+    <div class="wrapper">
+      <img [src]="images[0]">
+    </div>
+
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="wrapper">
+      <img [src]="images[1]">
+    </div>
+
+  </ng-template>
+  <ng-template ngbSlide>
+    <div class="wrapper">
+      <img [src]="images[2]">
+    </div>
+
+  </ng-template>
+</ngb-carousel>
+
+
+<div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="menu-section-heading">Explore Products</h2>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img src="../../../assets/images/fruits.jpg" class="menu-item-image w-100" />
+          <h1 class="menu-card-title">Fruits</h1>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img src="../../../assets/images/vegetables.jpg" class="menu-item-image w-100" />
+          <h1 class="menu-card-title">Vegetables</h1>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img src="../../../assets/images/cereals.jpg" class="menu-item-image w-100" />
+          <h1 class="menu-card-title">Cerals</h1>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img src="../../../assets/images/bevarages1.jpg" class="menu-item-image w-100" />
+          <h1 class="menu-card-title">Beverages</h1>
+
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img src="../../../assets/images/snacks.jpg" class="menu-item-image w-100" />
+          <h1 class="menu-card-title">Snacks</h1>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img src="../../../assets/images/frozen.jpg" class="menu-item-image w-100" />
+          <h1 class="menu-card-title">Frozen Foods</h1>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img src="../../../assets/images/household.jpg" class="menu-item-image w-100" />
+          <h1 class="menu-card-title">Household Products</h1>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+          <img src="../../../assets/images/General.jpg" class="menu-item-image w-100" />
+          <h1 class="menu-card-title">General</h1>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer-section pt-5 pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <img src="../../../assets/images/logodk.jpg" height="500" width="500"   />
+        <h1 class="footer-section-mail-id"></h1>
+        <p class="footer-section-address">
+          323/1, Main Road, Sp Kovil, chengalpattu.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <div class="col-md-4 d-flex align-items-center">
+    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+      <svg class="bi" width="30" height="24">
+        <use xlink:href="#bootstrap"></use>
+      </svg>
+    </a>
+    <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+  </div>
+
+  <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+          <use xlink:href="#twitter"></use>
+        </svg></a></li>
+    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+          <use xlink:href="#instagram"></use>
+        </svg></a></li>
+    <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+          <use xlink:href="#facebook"></use>
+        </svg></a></li>
+  </ul>
+</footer>
